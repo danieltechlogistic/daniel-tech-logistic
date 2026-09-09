@@ -1,0 +1,515 @@
+/* =========================
+   COMPANY BRAND
+========================= */
+
+header {
+    background-color: var(--dark);
+    color: var(--white);
+
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Brand */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 52px;
+    height: 52px;
+
+    background-color: var(--gold);
+    color: var(--dark);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.brand-text h1 {
+    margin: 0;
+    font-size: 22px;
+    color: white;
+}
+
+.brand-text p {
+    margin: 3px 0 0 0;
+
+    color: var(--gold);
+
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+    .hero-small-text {
+    color: var(--gold);
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    }
+button {
+    background-color: var(--gold);
+    color: var(--dark);
+
+    border: none;
+
+    padding: 14px 28px;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #B8962E;
+    transform: translateY(-2px);
+}
+/* =========================
+   PROFESSIONAL SERVICES
+========================= */
+
+#services {
+    background-color: #f8fafc;
+    text-align: center;
+}
+
+.services-content {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.services-content .section-label {
+    margin-bottom: 10px;
+}
+
+.services-content h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.services-intro {
+    max-width: 700px;
+    margin: 0 auto 45px auto;
+}
+
+
+/* Service cards container */
+
+.service-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 40px;
+}
+
+
+/* Individual card */
+
+.service-card {
+    background-color: white;
+
+    padding: 40px 30px;
+
+    border-radius: 14px;
+
+    border: 1px solid #e2e8f0;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+
+    text-align: center;
+}
+
+
+/* Card hover */
+
+.service-card:hover {
+    transform: translateY(-10px);
+
+    border-color: var(--gold);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Service icon */
+
+.service-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 25px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #fff8dc;
+
+    border-radius: 50%;
+
+    font-size: 32px;
+}
+
+
+/* Service title */
+
+.service-card h3 {
+    font-size: 22px;
+
+    color: var(--dark);
+
+    margin-bottom: 15px;
+}
+
+
+/* Service description */
+
+.service-card p {
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #64748b;
+
+    margin-bottom: 25px;
+}
+
+
+/* Learn More link */
+
+.service-link {
+    color: var(--gold);
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.service-link:hover {
+    color: var(--dark);
+}
+/* Contact Section */
+
+#contact {
+    background-color: var(--light);
+}
+
+.contact-content {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contact-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+}
+
+.contact-heading h2 {
+    font-size: 40px;
+    color: var(--dark);
+    margin-bottom: 20px;
+}
+
+.contact-heading p:not(.section-label) {
+    color: #64748b;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 50px;
+    align-items: start;
+}
+
+/* Contact Information */
+
+.contact-info {
+    background-color: var(--dark);
+    color: white;
+    padding: 40px;
+    border-radius: 16px;
+}
+
+.contact-info h3 {
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.contact-info > p {
+    color: #cbd5e1;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 25px;
+}
+
+.contact-item strong {
+    color: var(--gold);
+}
+
+.contact-item span {
+    color: white;
+}
+
+/* Contact Form */
+
+.contact-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: var(--dark);
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--gold);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+}
+
+/* Company Image */
+.company-image {
+    width: 100%;
+    max-width: 450px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .about-image-box {
+        height: 280px;
+        max-width: 100%;
+    }
+
+    .about-image-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 18px;
+    }
+
+}
+/* Mobile layout fix */
+@media (max-width: 768px) {
+
+    .service-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .service-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}
+/* Testimonials Section */
+
+#testimonials {
+    background-color: var(--light);
+    text-align: center;
+}
+
+.testimonials-content {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.testimonials-content h2 {
+    font-size: 40px;
+    color: var(--dark);
+    margin-bottom: 15px;
+}
+
+.testimonials-intro {
+    max-width: 700px;
+    margin: 0 auto 45px auto;
+    color: #64748b;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.testimonial-card {
+    background-color: var(--white);
+    padding: 35px 30px;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    text-align: left;
+    transition: 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--gold);
+}
+
+.quote {
+    color: var(--gold);
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 0.7;
+    margin-bottom: 20px;
+}
+
+.testimonial-card > p {
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.customer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.customer strong {
+    color: var(--dark);
+    font-size: 16px;
+}
+
+.customer span {
+    color: var(--gold);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .testimonials-content h2 {
+        font-size: 32px;
+    }
+
+    .testimonial-container {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-card {
+        padding: 30px 25px;
+    }
+
+}
+/* Primary Button */
+
+.primary-button {
+    display: inline-block;
+    background-color: var(--gold);
+    color: var(--dark);
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary-button:hover {
+    background-color: #b8962e;
+    transform: translateY(-2px);
+}
